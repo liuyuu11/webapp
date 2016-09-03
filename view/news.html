@@ -1,0 +1,101 @@
+<ion-scroll direction="x" paging="false" scrollbar-x="false" on-scroll="say()">
+	<a href="#/news/top">头条</a>
+	<a href="#/news/guoji">国际</a>
+	<a href="#/news/guonei">国内</a>
+	<a href="#/news/shehui">社会</a>
+	<a href="#/news/yule">娱乐</a>
+	<a href="#/news/tiyu">体育</a>
+	<a href="#/news/junshi">军事</a>
+	<a href="#/news/keji">科技</a>
+	<a href="#/news/caijing">财经</a>
+	<a href="#/news/shishang">时尚</a>
+</ion-scroll>
+
+<div ui-view="">
+
+</div>
+<footer>
+	<nav>
+		<a href="#/index"><img src="img/footer1.jpg" /><span>首页</span></a>
+		<a><img src="img/footer2.jpg" /><span>导航</span></a>
+		<a><img src="img/footer3.jpg" /><span>扫一扫</span></a>
+		<a><img src="img/footer4.jpg" /><span>我的信息</span></a>
+	</nav>
+</footer>
+
+<style>
+	ion-content {
+		position: fixed!important;
+		top: 40px!important;
+		margin-bottom: 50px!important;
+	}
+	/*头部滚动条样式*/
+	
+	ion-scroll {
+		height: 40px;
+		white-space: nowrap;
+		background: #DDDDDD;
+		position: fixed;
+	}
+	
+	ion-scroll a {
+		font-size: 18px;
+		line-height: 40px;
+		color: black;
+		margin: 0 10px;
+	}
+	/*新闻加载样式*/
+	
+	.main {
+		width: 100%;
+		min-height: 600px;
+		height: 100%;
+		background: white;
+		overflow: hidden;
+	}
+	
+	.new {
+		margin: 10px 20px;
+		border-bottom: 1px solid #e8e8e8;
+		overflow: hidden;
+		padding-bottom: 10px;
+	}
+	
+	.new li:nth-child(1) {
+		width: 65%;
+		float: left;
+	}
+	
+	.new li:nth-child(2) {
+		padding-top: 12px;
+		width: 35%;
+		float: right;
+	}
+	
+	.new_pic img {
+		width: 120px;
+		float: right;
+	}
+	
+	.new .new_title {
+		font-size: 16px;
+	}
+	
+	.new .new_author {
+		float: left;
+		font-size: 14px;
+	}
+	
+	.new .new_date {
+		float: left;
+		font-size: 14px;
+		font-style: normal;
+	}
+	
+	.new a {
+		margin-left: 20px;
+		float: left;
+		font-size: 14px;
+		color: cornflowerblue;
+	}
+</style>

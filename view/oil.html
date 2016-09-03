@@ -1,0 +1,56 @@
+<div class="oilPrice">
+	<table border="0" cellspacing="0" cellpadding="0">
+		<tr><td>最新油价</td></tr>
+		
+		<tr><td><p>广东省汽、柴油<br/>今日最高零售价如下</p></td></tr>
+
+		<tr><td><p>汽油</p></td></tr>
+		<tr><td><p>92号汽油V：{{b90}}&nbsp;&nbsp;元/升</p></td></tr>
+		<tr><td><p>95号汽油V：{{b93}}&nbsp;&nbsp;元/升</p></td></tr>
+		<tr><td><p>98号汽油V：{{b97}}&nbsp;&nbsp;元/升</p></td></tr>
+		<tr><td><p>柴油</p></td></tr>
+		<tr><td><p>0号柴油V：{{b0}}&nbsp;&nbsp;元/升</p></td></tr>
+	</table>
+	<br /><br />
+	<p>数据来源于中石化，如与实际油价有误差，以门店为准</p>
+	<br>
+</div>
+<style type="text/css">
+	.oilPrice{
+		text-align: center;
+		margin: 15px;
+		background: dodgerblue;
+		color: white;
+		font-family: "微软雅黑";
+		border-radius:4px;
+		height: 500px;
+	}
+	.oilPrice table{
+		width: 100%;
+	}
+	tr:nth-child(1){
+		font-size: 24px;
+		height: 50px;
+		line-height: 50px;
+	}
+	tr:nth-child(2) p{
+		margin: 0 auto;
+		padding: 10px;
+		width: 50%;
+		border-top: 1px solid white;
+	}
+	tr:nth-child(3) p,tr:nth-child(7) p{
+		background: white;
+		border-radius: 3px;
+		width: 50%;
+		margin: 0 auto;
+		margin-top: 20px;
+		color: dodgerblue;
+	}
+	tr:nth-child(4) p,tr:nth-child(5) p,tr:nth-child(6) p,tr:nth-child(8) p{
+		border: 1px solid white;
+		border-radius: 3px;
+		width: 50%;
+		margin: 0 auto;
+	}
+</style>

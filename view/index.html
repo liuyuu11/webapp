@@ -1,0 +1,184 @@
+<ion-content>
+	<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="http://91snoob.cn/webapp/img/1.jpg"></div>
+			<div class="swiper-slide"><img src="http://91snoob.cn/webapp/img/2.jpg"></div>
+			<div class="swiper-slide"><img src="http://91snoob.cn/webapp/img/3.jpg"></div>
+			<div class="swiper-slide"><img src="http://91snoob.cn/webapp/img/4.jpg"></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<div class="indexMenu">
+		<a href="#/news/top"><img src="http://91snoob.cn/webapp/img/news.png"><span>新闻</span></a>
+		<a href="#/news"><img src="http://91snoob.cn/webapp/img/express.jpg"><span>快递查询</span></a>
+		<a href="#/news"><img src="http://91snoob.cn/webapp/img/phone.png"><span>话费查询</span></a>
+		<a href="#/news"><img src="http://91snoob.cn/webapp/img/weather.png"><span>天气查询</span></a>
+		<a href="#/news"><img src="http://91snoob.cn/webapp/img/bus.png"><span>公交查询</span></a>
+		<a href="#/news"><img src="http://91snoob.cn/webapp/img/train.png"><span>火车查询</span></a>
+		<a href="#/news"><img src="http://91snoob.cn/webapp/img/xingzuo.jpg"><span>星座运势</span></a>
+		<a href="#/news"><img src="http://91snoob.cn/webapp/img/food.png"><span>食谱大全</span></a>
+	</div>
+	<div class="indexAd">
+		<div class="adImg"><img src="http://91snoob.cn/webapp/img/ad.jpg" /></div>
+		<ul class="adContent">
+			<li><span>专享丨1块赌红包，100%中5毛钱，新人专享活动.</span></li>
+			<li><span>福利丨我的百万T种子就在我的百度云里....</span></li>
+		</ul>
+	</div>
+	<div class="businessCoop">
+		<a href="#/littleApp/oil">
+			<dl>
+				<dt><b class="title">今日油价</b><i class="detail">柴油、机油价格</i></dt>
+				<dd><img src="http://91snoob.cn/webapp/img/youjia.jpg" /></dd>
+			</dl>
+		</a>
+		<dl>
+			<dt><b class="title">手机特卖</b><i class="detail">超低价购机</i></dt>
+			<dd><img src="http://91snoob.cn/webapp/img/mobilephone.jpg" /></dd>
+		</dl>
+		<dl>
+			<dt><b class="title">领卷中心</b><i class="detail">优惠卷大派送</i></dt>
+			<dd><img src="http://91snoob.cn/webapp/img/card.jpg" /></dd>
+		</dl>
+		<dl>
+			<dt><b class="title">长隆水上</b><i class="detail">99低价购票进场</i></dt>
+			<dd><img src="http://91snoob.cn/webapp/img/cl.jpg" /></dd>
+		</dl>
+	</div>
+</ion-content>
+<footer>
+	<nav>
+		<a href="#/index"><img src="img/footer1.jpg" /><span>首页</span></a>
+		<a><img src="img/footer2.jpg" /><span>导航</span></a>
+		<a><img src="img/footer3.jpg" /><span>扫一扫</span></a>
+		<a><img src="img/footer4.jpg" /><span>我的信息</span></a>
+	</nav>
+</footer>
+
+<style>
+	.businessCoop {
+		width: 100%;
+		background: #FFFFFF;
+		overflow: hidden;
+	}
+	
+	.businessCoop img {
+		width: 50px;
+		float: right;
+		margin-right: 10px;
+	}
+	
+	.businessCoop dl {
+		padding: 10px 10px;
+		float: left;
+		width: 50%;
+		overflow: hidden;
+		margin-bottom: 0;
+	}
+	
+	.businessCoop dl:nth-child(1),
+	.businessCoop dl:nth-child(2) {
+		border-bottom: 1px solid #f0f0f0;
+	}
+	
+	.businessCoop dl:nth-child(1),
+	.businessCoop dl:nth-child(3) {
+		border-right: 1px solid #f0f0f0;
+	}
+	
+	.businessCoop dl dt {
+		float: left;
+		width: 50%;
+		height: 60px;
+	}
+	
+	.businessCoop dl dd {
+		float: right;
+		width: 50%;
+		height: 60px;
+	}
+	
+	.businessCoop .title {
+		font-weight: 100;
+		font-size: 18px;
+	}
+	
+	.businessCoop .detail {
+		margin-top: 10px;
+		float: left;
+		font-size: 12px;
+		color: #898989;
+	}
+	
+	ion-content {
+		background: #f0f0f0;
+		margin-bottom: 50px!important;
+	}
+	
+	.indexMenu {
+		background: #FFFFFF;
+		overflow: hidden;
+		padding-top: 20px;
+	}
+	
+	.indexMenu a {
+		height: 100px;
+		width: 25%;
+		float: left;
+		text-align: center;
+	}
+	
+	.indexAd {
+		width: 100%;
+		height: 60px;
+		background: #FFFFFF;
+		margin: 15px 0;
+	}
+	
+	.adImg {
+		float: left;
+		width: 20%;
+		overflow: hidden;
+	}
+	
+	.adImg img {
+		display: block;
+		border-right: 1px solid #F0F0F0;
+		padding: 0 15px;
+		height: 40px;
+		margin-top: 10px;
+	}
+	
+	.adContent {
+		float: left;
+		width: 80%;
+		padding: 8px 0;
+		padding-left: 18px;
+		text-indent: -5px;
+	}
+	
+	.adContent li {
+		list-style: disc;
+		color: red;
+		margin-top: 2px;
+	}
+	
+	.adContent li span {
+		color: #000000;
+	}
+	
+	.appMenu {
+		height: 1000px;
+	}
+	
+	.swiper-container {
+		height: 206px;
+		width: 100%;
+	}
+	
+	.indexMenu span {
+		display: block;
+		color: black;
+	}
+</style>

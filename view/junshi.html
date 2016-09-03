@@ -1,0 +1,14 @@
+<ion-content>
+	<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+	<ul ng-repeat="new in news" class="new">
+		<li>
+			<h4 class="new_title">{{new.title}}</h4>
+			<div class="new_author">发布人：{{new.author_name}}</div>
+			<a href="{{new.url}}">查看原文</a><br />
+			<i class="new_date">发布时间：{{new.date}}</i>
+		</li>
+		<li class="new_pic">
+			<img src="{{new.thumbnail_pic_s}}" />
+		</li>
+	</ul>
+</ion-content>
