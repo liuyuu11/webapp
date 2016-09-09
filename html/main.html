@@ -1,0 +1,66 @@
+<ion-content>
+	<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+	<!--轮播图-->
+	<div id="swiper">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="image/1.jpg"></div>
+				<div class="swiper-slide"><img src="image/2.jpg"></div>
+				<div class="swiper-slide"><img src="image/3.jpg"></div>
+				<div class="swiper-slide"><img src="image/4.jpg"></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+
+	<!--主要应用导航-->
+	<div id="mainMenu">
+		<a href="#/new"><img src="image/news.png"><span>新闻</span></a>
+		<a href="#/new"><img src="image/express.jpg"><span>快递查询</span></a>
+		<a href="#/news"><img src="image/phone.png"><span>话费查询</span></a>
+		<a href="#/news"><img src="image/weather.png"><span>天气查询</span></a>
+		<a href="#/news"><img src="image/bus.png"><span>公交查询</span></a>
+		<a href="#/news"><img src="image/train.png"><span>火车查询</span></a>
+		<a href="#/news"><img src="image/xingzuo.jpg"><span>星座运势</span></a>
+		<a href="#/news"><img src="image/food.png"><span>食谱大全</span></a>
+	</div>
+	
+	<!--首页广告-->
+	<div class="mainAd">
+		<div class="adImg"><img src="image/ad.jpg" /></div>
+		<ul class="adContent">
+			<li><span>专享丨1块赌红包，100%中5毛钱，新人专享活动.</span></li>
+			<li><span>福利丨我的百万T种子就在我的百度云里....</span></li>
+		</ul>
+	</div>
+	
+	<!--商业合作-->
+	<div class="businessCoop">
+		<a href="#/littleApp/oil">
+			<dl>
+				<dt><b class="title">今日油价</b><i class="detail">柴油、机油价格</i></dt>
+				<dd><img src="image/youjia.jpg" /></dd>
+			</dl>
+		</a>
+		<dl>
+			<dt><b class="title">手机特卖</b><i class="detail">超低价购机</i></dt>
+			<dd><img src="image/mobilephone.jpg" /></dd>
+		</dl>
+		<dl>
+			<dt><b class="title">领卷中心</b><i class="detail">优惠卷大派送</i></dt>
+			<dd><img src="image/card.jpg" /></dd>
+		</dl>
+		<dl>
+			<dt><b class="title">长隆水上</b><i class="detail">99低价购票进场</i></dt>
+			<dd><img src="image/cl.jpg" /></dd>
+		</dl>
+	</div>
+</ion-content>
+<ion-footer-bar id="footerNav">
+	<nav>
+		<a href="#/main"><img src="image/footer1.jpg" /><span>首页</span></a>
+		<a><img src="image/footer2.jpg" /><span>导航</span></a>
+		<a><img src="image/footer3.jpg" /><span>扫一扫</span></a>
+		<a><img src="image/footer4.jpg" /><span>我的信息</span></a>
+	</nav>
+</ion-footer-bar>

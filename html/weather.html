@@ -1,0 +1,46 @@
+<div style="color:white">
+	<div class="top"></div>
+	<div class="middle">
+		<div class="boxinfo">
+			<div id="weather">{{today.weather}}</div>
+			<div id="temperature">{{today.temperature}}</div>
+			<div id="sk">{{sk.wind_direction}}{{sk.wind_strength}},湿度：{{sk.humidity}}</div>
+			<div id="dressing_advice">{{today.dressing_advice}}</div>
+		</div>
+	</div>
+	<div class="footer">
+		<ul ng-repeat="day in future">
+			<li>{{day.date}}</li>
+			<li>{{day.temperature}}</li>
+			<li>{{day.weather}}</li>
+			<li>{{day.week}}</li>
+			<li>{{day.wind}}</li>
+		</ul>
+	</div>
+</div>
+
+<style type="text/css">
+	.top {
+		background: red;
+		width: 100%;
+		height: 30px;
+	}
+	
+	.boxinfo {
+		width: 100%;
+		height: 300px;
+		background: url(img/building_night.png) center bottom no-repeat;
+	}
+	
+	.middle {
+		background: -webkit-linear-gradient(top, #0c7ec4, #5f92c9);
+		width: 100%;
+		height: 300px;
+	}
+	
+	.footer {
+		width: 100%;
+		height: 400px;
+		background: #0d5aa5;
+	}
+</style>

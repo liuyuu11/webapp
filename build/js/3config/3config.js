@@ -1,0 +1,28 @@
+//注入路由引擎
+app.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
+	//声明默认导航
+	$urlRouterProvider.when('','/main');
+	$stateProvider.state('main',{
+		url:'/main',
+		templateUrl:'html/main.html',
+		controller:'mainCtrl'
+	})//新闻页面
+	.state('new',{
+		url:'/new',
+		templateUrl:'html/new.html',
+		controller:'newCtrl'
+	})//应用页面
+	.state('littleApp',{
+		url:'/littleApp',
+		templateUrl:'html/littleApp.html',
+		controller:'littleAppCtrl'
+	}).state('littleApp.oil',{
+		url:'/oil',
+		templateUrl:'html/oil.html',
+		controller:'oilCtrl'
+	}).state('littleApp.weather',{
+		url:'/weather',
+		templateUrl:'html/weather.html',
+		controller:'weatherCtrl'
+	})
+}]);

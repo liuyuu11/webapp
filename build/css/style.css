@@ -1,0 +1,262 @@
+/*底部菜单导航栏*/
+ion-footer-bar {
+	background: #414042;
+}
+#footerNav {
+	height: 60px;
+	background: #414042;
+}
+#footerNav nav{
+	width: 100%;
+}
+#footerNav nav a {
+	padding: 5px;
+	float: left;
+	width: 25%;
+	margin: 0 auto;
+}
+
+#footerNav nav a img {
+	width: 26px;
+	height: 26px;
+	margin: 0 auto;
+}
+
+#footerNav nav a span {
+	margin-top: 2px;
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	height: 14px;
+	color: #9fa0a0;
+}
+
+
+/*main.html*/
+
+
+/*轮播图*/
+
+#swiper {
+	width: 100%;
+}
+
+
+/*主要应用*/
+
+#mainMenu {
+	overflow: hidden;
+	padding-top: 20px;
+	background: #FFFFFF;
+}
+
+#mainMenu a {
+	height: 100px;
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+#mainMenu a img {
+	display: inline;
+}
+
+#mainMenu a span {
+	width: 100%;
+	float: left;
+}
+
+
+/*首页广告*/
+
+.mainAd {
+	width: 100%;
+	height: 60px;
+	background: #FFFFFF;
+	margin: 15px 0;
+}
+
+.adImg {
+	float: left;
+	width: 20%;
+	overflow: hidden;
+}
+
+.adImg img {
+	display: block;
+	border-right: 1px solid #F0F0F0;
+	padding: 0 15px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+.adContent {
+	float: left;
+	width: 80%;
+	padding: 8px 0;
+	padding-left: 18px;
+	text-indent: -5px;
+}
+
+.adContent li {
+	list-style: disc;
+	color: red;
+	margin-top: 2px;
+}
+
+.adContent li span {
+	color: #000000;
+}
+
+.businessCoop {
+	width: 100%;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+
+.businessCoop img {
+	width: 50px;
+	float: right;
+	margin-right: 10px;
+}
+
+.businessCoop dl {
+	padding: 10px 10px;
+	float: left;
+	width: 50%;
+	overflow: hidden;
+	margin-bottom: 0;
+}
+
+.businessCoop dl:nth-child(1),
+.businessCoop dl:nth-child(2) {
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.businessCoop dl:nth-child(1),
+.businessCoop dl:nth-child(3) {
+	border-right: 1px solid #f0f0f0;
+}
+
+.businessCoop dl dt {
+	float: left;
+	width: 50%;
+	height: 60px;
+}
+
+.businessCoop dl dd {
+	float: right;
+	width: 50%;
+	height: 60px;
+}
+
+.businessCoop .title {
+	font-weight: 100;
+	font-size: 18px;
+}
+
+.businessCoop .detail {
+	margin-top: 10px;
+	float: left;
+	font-size: 12px;
+	color: #898989;
+}
+
+.appMenu {
+	height: 1000px;
+}
+
+
+/*new页面*/
+
+
+/*新闻头部导航*/
+
+
+/*头部滚动条样式*/
+
+#newsNav {
+	border-color: #DDDDDD;
+	background-color: #DDDDDD;
+	background-image: linear-gradient(0deg, #DDDDDD, #DDDDDD 50%, transparent 50%);
+	color: #fff;
+}
+
+ion-scroll {
+	height: 40px;
+	white-space: nowrap;
+	background: #DDDDDD;
+	position: fixed;
+}
+
+ion-scroll a {
+	padding: 8px 0;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 11px;
+}
+
+
+/*每条新闻导读加载的样式*/
+
+
+/*新闻加载样式*/
+
+.main {
+	width: 100%;
+	min-height: 600px;
+	height: 100%;
+	background: white;
+	overflow: hidden;
+}
+
+.new {
+	margin: 15px 20px;
+	border-bottom: 1px solid #e8e8e8;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+
+.new li:nth-child(1) {
+	width: 65%;
+	float: left;
+}
+
+.new li:nth-child(2) {
+	width: 35%;
+	float: right;
+}
+
+.new_pic img {
+	width: 120px;
+	height: 80px;
+	float: right;
+}
+
+.new h1 {
+	font-size: 16px;
+	height: 32px;
+}
+
+.new h2 {
+	float: left;
+	font-size: 14px;
+}
+
+.new h3 {
+	margin-right: 30px;
+	float: right;
+	font-size: 14px;
+}
+
+.new h3 a {
+	color: blue;
+}
+
+.new h4 {
+	float: left;
+	font-size: 14px;
+	font-style: normal;
+	width: 100%;
+}

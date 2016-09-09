@@ -1,0 +1,31 @@
+<ion-header-bar id="newsNav">
+	<ion-scroll direction="x" paging="false" scrollbar-x="false" on-scroll="say()">
+		<a href="" ng-repeat="newType in newsType" ng-click="click()">{{newType.channel}}</a>
+	</ion-scroll>
+</ion-header-bar>
+
+<ion-content>
+	<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()" refreshing-text="正在刷新"></ion-refresher>
+	<ul ng-repeat="article in articles" class="new">
+		<li>
+			<h1>{{article.title}}</h1>
+			<h2>发布人:{{article.author}}</h2>
+			<h3><a href="{{article.url}}">查看原文</a></h3>
+			<h4>发布时间:{{article.time}}</h4>
+		</li>
+		<li class="new_pic">
+			<img src="{{article.img}}" />
+		</li>
+	</ul>
+	<ion-infinite-scroll on-infinite="loadMore()" distance="1%" ng-if="moreDataCanBeLoaded()">
+	</ion-infinite-scroll>
+</ion-content>
+
+<ion-footer-bar id="footerNav">
+	<nav>
+		<a href="#/main"><img src="image/footer1.jpg" /><span>首页</span></a>
+		<a><img src="image/footer2.jpg" /><span>导航</span></a>
+		<a><img src="image/footer3.jpg" /><span>扫一扫</span></a>
+		<a><img src="image/footer4.jpg" /><span>我的信息</span></a>
+	</nav>
+</ion-footer-bar>

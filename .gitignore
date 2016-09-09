@@ -1,0 +1,7 @@
+﻿#过滤文件夹
+/doc
+/node_modules
+
+#过滤zip文件
+*.zip
+*.project

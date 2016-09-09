@@ -1,0 +1,61 @@
+
+<ion-side-menus ng-controller="littleAppCtrl">
+	<ion-side-menu-content>
+		<ion-header-bar align-title="center" class="bar-positive">
+			<div class="buttons">
+				<button id="showBtn" ng-click="toggleLeft()">{{state}}</button>
+			</div>
+			<h1 class="title">{{title}}</h1>
+			<div class="buttons">
+				<a href="http://localhost/webapp"><button id="backBtN">返回</button></a>
+			</div>
+		</ion-header-bar>
+		<ion-content>
+			<div ui-view="">
+				
+			</div>
+		</ion-content>
+
+	</ion-side-menu-content>
+	<ion-side-menu side="left" width="150">
+		<ion-list>
+			<ion-item>
+				<a href="#/littleApp/oil">今日油价</a>
+			</ion-item>
+			<ion-item>
+				<a href="#/littleApp/oil">手机特卖</a>
+			</ion-item>
+			<ion-item>
+				<a href="#/littleApp/oil">领卷中心</a>
+			</ion-item>
+			<ion-item>
+				<a href="#/littleApp/oil">长隆水上</a>
+			</ion-item>
+			<ion-item>
+				<a href="#/littleApp/weather">天气数据</a>
+			</ion-item>
+		</ion-list>
+		
+	<ion-side-menu>
+</ion-side-menus>
+<style type="text/css">
+
+
+	.bar.bar-positive {
+		background: red;
+	}
+	
+	.bar .title {
+		font-family: "微软雅黑";
+		font-size: 20px;
+		letter-spacing: 4px;
+	}
+	#showBtn,#backBtN{
+		font-size: 14px;
+		font-family: "微软雅黑";
+		line-height: 34px;
+		background: red;
+		border: none;
+		color: white;
+	}
+</style>
